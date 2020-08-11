@@ -14,4 +14,6 @@ git clone --depth 1 https://github.com/yongyesun/luci-app-koolproxy package/luci
 git clone --depth 1 https://github.com/kenzok8/openwrt-packages package/kenzok8
 git clone --depth 1 https://github.com/yongyesun/lede package/lede
 cp -r package/lede/package/lean package/lean
+cp -r package/lede/tools/ucl tools/ucl
+cp -r package/lede/tools/upx tools/upx
 rm -rf package/lede
