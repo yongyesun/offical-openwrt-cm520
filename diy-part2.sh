@@ -16,4 +16,6 @@ git clone --depth 1 https://github.com/yongyesun/lede package/lede
 cp -r package/lede/package/lean package/lean
 cp -r package/lede/tools/ucl tools/ucl
 cp -r package/lede/tools/upx tools/upx
+sed '29a tools-y += ucl upx' tools/Makefile
+sed '45a $(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
 rm -rf package/lede
