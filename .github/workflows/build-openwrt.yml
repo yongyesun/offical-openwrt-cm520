@@ -14,7 +14,7 @@ on:
     types: published
   push:
     branches:
-      - master
+      - little-Partition
     paths:
       - '.config'
 #  schedule:
